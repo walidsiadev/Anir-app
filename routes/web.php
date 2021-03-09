@@ -12,23 +12,17 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+#vue route
+Route::get('/', 'Ctlvue@Welcome');
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/admin', 'Ctlvue@Menuprincipal');
 
-Route::get('/admin', function () {
-    return view('Menuprincipal');
-});
+Route::get('/produit', 'Ctlvue@Produit');
 
-Route::get('/produit', function () {
-    return view('produit.index');
-});
+Route::get('/fornisseur', 'Ctlvue@Fornisseur');
 
-Route::get('/fornisseur', function () {
-    return view('fornisseur.index');
-});
+Route::get('/clients', 'Ctlvue@Clients');
 
-Route::get('/clients', function () {
-    return view('clients.index');
-});
+
+#Crud route
+Route::post('/addclient', 'ctlcrud@Addclient');

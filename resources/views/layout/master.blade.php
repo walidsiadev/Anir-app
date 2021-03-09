@@ -37,6 +37,10 @@
         <script src="{{ asset('assets/libs/flot/jquery.flot.crosshair.js') }}"></script>
         <script src="{{ asset('assets/libs/flot.tooltip/js/jquery.flot.tooltip.min.js') }}"></script>
         <script src="{{ asset('dist/js/pages/chart/chart-page-init.js') }}"></script>
+        <script src='{{ asset('assets/extra-libs/multicheck/datatable-checkbox-init.js') }}'></script>
+        <script src='{{ asset('assets/extra-libs/multicheck/jquery.multicheck.js') }}'></script>
+        <script src='{{ asset('assets/extra-libs/DataTables/datatables.min.js') }}'></script>
+        <link href='{{ asset('assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.css') }}' rel="stylesheet">
     </head>
     <body>
         <div id="main-wrapper">
