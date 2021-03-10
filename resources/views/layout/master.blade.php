@@ -41,6 +41,16 @@
         <script src='{{ asset('assets/extra-libs/multicheck/jquery.multicheck.js') }}'></script>
         <script src='{{ asset('assets/extra-libs/DataTables/datatables.min.js') }}'></script>
         <link href='{{ asset('assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.css') }}' rel="stylesheet">
+        <meta name="csrf-token" content="{{ csrf_token() }}">
+        <script src="{{ asset('assets/libs/toastr/build/toastr.min.js') }}"></script>
+        <link href="{{ asset('assets/libs/toastr/build/toastr.min.css') }}" rel="stylesheet">
+        <script>
+            $.ajaxSetup({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                }
+            });
+        </script>
     </head>
     <body>
         <div id="main-wrapper">

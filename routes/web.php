@@ -25,4 +25,7 @@ Route::get('/clients', 'Ctlvue@Clients');
 
 
 #Crud route
+#Clients
 Route::post('/addclient', 'ctlcrud@Addclient');
+Route::post('/updateclient', 'ctlcrud@UpdateClient');
+Route::post('/suprimerclient', 'ctlcrud@Suprimerclient');
